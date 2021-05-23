@@ -682,7 +682,11 @@ public abstract class BasePlugin<K extends BaseExtension> implements Plugin<Proj
             project.getLogger().debug("RESOLVED: " + CONFIG_NATIVES);
 
         // set asset index
-        replacer.putReplacement(REPLACE_ASSET_INDEX, version.assetIndex.id);
+        try {
+            replacer.putReplacement(REPLACE_ASSET_INDEX, version.assetIndex.id);
+        } catch(NullPointerException e){
+
+        }
 
         this.mcVersionJson = version;
 
