@@ -82,7 +82,7 @@ public class JsonFactory {
 
             // still didnt find the inherited
             if (!found) {
-                throw new FileNotFoundException("Inherited json file (" + v.inheritsFrom + ") not found! Maybe you are running in offline mode?");
+                //throw new FileNotFoundException("Inherited json file (" + v.inheritsFrom + ") not found! Maybe you are running in offline mode?");
             }
         } else if (v.assetIndex == null) // inherit if the assetIndex is missing
         {
@@ -108,7 +108,7 @@ public class JsonFactory {
 
             // still didnt find the inherited
             if (!found) {
-                throw new FileNotFoundException("Inherited json file (" + v.inheritsFrom + ") not found! Maybe you are running in offline mode?");
+                //throw new FileNotFoundException("Inherited json file (" + v.inheritsFrom + ") not found! Maybe you are running in offline mode?");
             }
         }
 
