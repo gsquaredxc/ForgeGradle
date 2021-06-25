@@ -132,7 +132,7 @@ public class Constants {
     public static final String URL_ASSETS = "http://resources.download.minecraft.net";
     public static final String URL_LIBRARY = "https://libraries.minecraft.net/";
     public static final String URL_FORGE_MAVEN = "https://maven.minecraftforge.net/";
-    public static final String URL_MCP_JSON = "http://export.mcpbot.bspk.rs/versions.json";
+    public static final String URL_MCP_JSON = "https://maven.minecraftforge.net/de/oceanlabs/mcp/versions.json";
 
     // configs
     public static final String CONFIG_MCP_DATA = "forgeGradleMcpData";
@@ -161,19 +161,19 @@ public class Constants {
     public static final String GRADLE_START_SERVER = "GradleStartServer";
 
     public static final String[] GRADLE_START_RESOURCES = new String[]{
-        "GradleStart.java",
-        "GradleStartServer.java",
-        "net/minecraftforge/gradle/GradleStartCommon.java"
+            "GradleStart.java",
+            "GradleStartServer.java",
+            "net/minecraftforge/gradle/GradleStartCommon.java"
 
-        // 1.7.10 only
-        //makeStart.addResource("net/minecraftforge/gradle/OldPropertyMapSerializer.java");
+            // 1.7.10 only
+            //makeStart.addResource("net/minecraftforge/gradle/OldPropertyMapSerializer.java");
     };
 
     public static final String[] GRADLE_START_FML_RES = new String[]{
-        "net/minecraftforge/gradle/GradleForgeHacks.java",
-        "net/minecraftforge/gradle/tweakers/CoremodTweaker.java",
-        "net/minecraftforge/gradle/tweakers/AccessTransformerTweaker.java",
-        "net/minecraftforge/gradle/GrossClassloaderHacks.java"
+            "net/minecraftforge/gradle/GradleForgeHacks.java",
+            "net/minecraftforge/gradle/tweakers/CoremodTweaker.java",
+            "net/minecraftforge/gradle/tweakers/AccessTransformerTweaker.java",
+            "net/minecraftforge/gradle/GrossClassloaderHacks.java"
     };
 
     // mcp data constants
