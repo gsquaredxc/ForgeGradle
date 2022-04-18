@@ -9,8 +9,8 @@ plugins {
 group = 'net.minecraftforge.gradle'
 version = '2.1'
 archivesBaseName = 'ForgeGradle'
-targetCompatibility = 1.8
-sourceCompatibility = 1.8
+targetCompatibility = 1.16
+sourceCompatibility = 1.16
 
 repositories {
     mavenLocal()
