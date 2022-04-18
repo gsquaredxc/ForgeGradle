@@ -222,7 +222,7 @@ public abstract class BasePlugin<K extends BaseExtension> implements Plugin<Proj
         // Check FG Version, unless its disabled
         List<String> lines = Lists.newArrayListWithExpectedSize(5);
         Object disableUpdateCheck = project.getProperties().get("net.minecraftforge.gradle.disableUpdateChecker");
-        if (!"true".equals(disableUpdateCheck) && !"yes".equals(disableUpdateCheck) && !new Boolean(true).equals(disableUpdateCheck)) {
+        if (!"true".equals(disableUpdateCheck) && !"yes".equals(disableUpdateCheck) && !Boolean.TRUE.equals(disableUpdateCheck)) {
             doFGVersionCheck(lines);
         }
 

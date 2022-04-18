@@ -35,8 +35,8 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.jar.JarInputStream;
 import java.util.jar.JarOutputStream;
-import java.util.jar.Pack200;
-import java.util.jar.Pack200.Packer;
+import io.pack200.Pack200;
+import io.pack200.Pack200.Packer;
 import java.util.zip.Adler32;
 
 import lzma.streams.LzmaOutputStream;

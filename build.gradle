@@ -9,7 +9,8 @@ plugins {
 group = 'net.minecraftforge.gradle'
 version = '2.1'
 archivesBaseName = 'ForgeGradle'
-targetCompatibility = sourceCompatibility = 1.8
+targetCompatibility = 1.8
+sourceCompatibility = 1.8
 
 repositories {
     mavenLocal()
@@ -56,8 +57,13 @@ dependencies {
     implementation gradleApi()
 
     // moved to the beginning to be the overrider
-    implementation 'org.ow2.asm:asm-debug-all:5.0.3'
+    implementation 'org.ow2.asm:asm-debug-all:5.0.4'
     implementation 'com.google.guava:guava:18.0'
+
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:2.3.3'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.3'
+
+    implementation 'com.github.pack200:pack200:e34152f54f'
 
     implementation('club.chachy:GitVersion:394b3c5363') {
         exclude module: 'org.eclipse.jgit'
