@@ -241,11 +241,11 @@ class TaskGenSubprojects extends DefaultTask {
     }
 
     public void addCompileDep(String depString) {
-        dependencies.add("compile '" + depString + "'");
+        dependencies.add("implementation '" + depString + "'");
     }
 
     public void addTestCompileDep(String depString) {
-        dependencies.add("testCompile '" + depString + "'");
+        dependencies.add("testImplementation '" + depString + "'");
     }
 
     public void addRepo(String name, String url) {
