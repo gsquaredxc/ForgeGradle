@@ -69,7 +69,7 @@ dependencies {
         exclude module: 'org.eclipse.jgit'
     }
 
-    shade 'org.eclipse.jgit:org.eclipse.jgit:6.1.0.202203080745-r'
+    shade "org.eclipse.jgit:org.eclipse.jgit:5.11.0.202103091610-r"
 
     implementation 'net.sf.opencsv:opencsv:2.3' // reading CSVs.. also used by SpecialSource
     implementation 'com.cloudbees:diff4j:1.3' // for difing and patching
